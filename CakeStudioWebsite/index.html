@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SweetTreats Bakery | Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; background-color: #fff8f9; }
+    .navbar { background-color: #ffe6ec; }
+    .hero {
+      background: linear-gradient(rgba(255, 204, 214, 0.3), rgba(255, 204, 214, 0.6)),
+                  url('https://images.unsplash.com/photo-1601972599720-6e8b45b7eabf') center/cover no-repeat;
+      height: 85vh;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+      color: #ee5592;
+    }
+    .hero p {
+      font-size: 1.3rem;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
+    }
+    .hero .btn {
+      background-color: #fff;
+      color: #e63973;
+      font-weight: 500;
+      border-radius: 25px;
+      padding: 10px 25px;
+      transition: 0.3s;
+    }
+    .hero .btn:hover {
+      background-color: #e63973;
+      color: white;
+    }
+    .feature-section {
+      background-color: #fffafb;
+      padding: 60px 0;
+    }
+    .card {
+      border: none;
+      overflow: hidden;
+      border-radius: 20px;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.04);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+    .card img {
+      height: 260px;
+      object-fit: cover;
+    }
+    .card-body {
+      background-color: #ffeef3;
+    }
+    .card-title {
+      color: #e63973;
+      font-weight: 700;
+    }
+    .footer {
+      background-color: #ffe6ec;
+      padding: 20px;
+      text-align: center;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4 text-danger" href="index.html">The Bake Studio 🍰</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navmenu"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link fw-semibold" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link fw-semibold" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div>
+      <h1>Freshly Baked Happiness 🍩</h1>
+      <p>Where every dessert tells a sweet story.</p>
+      <a href="menu.html" class="btn mt-3">Explore Menu</a>
+    </div>
+  </section>
+
+  <!-- Featured Products Section -->
+  <section class="feature-section text-center">
+    <div class="container">
+      <h2 class="fw-bold mb-4" style="color:#e63973;">Our Most-Loved Treats</h2>
+      <p class="text-muted mb-5">Handcrafted with passion, baked with love 💗</p>
+
+      <div class="row g-4">
+        <!-- Cup Cake -->
+        <div class="col-md-4">
+          <div class="card shadow-lg">
+            <img src="images/vanilacupcake.jpg" class="card-img-top" alt="Vanila CupCake">
+            <div class="card-body">
+              <h5 class="card-title">Tasty Vanila CupCake</h5>
+              <p class="card-text">Fluffy, Creamy layers and cream cheese frosting.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Apple turnover -->
+        <div class="col-md-4">
+          <div class="card shadow-lg">
+            <img src="images/appleturnover.jpg" class="card-img-top" alt="Apple Turnover">
+            <div class="card-body">
+              <h5 class="card-title">Yummy Apple Turnover</h5>
+              <p class="card-text">Cinnamon-Spiced Apple mixtur and eColorful swirls topped.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Donut -->
+        <div class="col-md-4">
+          <div class="card shadow-lg">
+            <img src="images/creamdonuts.jpg" class="card-img-top" alt="Cream Donuts">
+            <div class="card-body">
+              <h5 class="card-title">Glazed Dream Donuts</h5>
+              <p class="card-text">Soft, sugary perfection with every bite.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">© 2025 The Bake Studio Bakery | Made with love by Eiman ;)</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
